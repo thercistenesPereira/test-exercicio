@@ -1,3 +1,20 @@
+/* body{  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.cursor {  z-index: 999;
+  background-color: #F2E800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #F2E800, 0 0 60px #F2E800, 0 0 100px #F2E800;
+}
+
+.cursor:before {}
+
 .header {
     padding: 3px;
     width: 100%;
