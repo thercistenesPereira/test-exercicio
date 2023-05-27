@@ -1,0 +1,25 @@
+.header {
+    padding: 3px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(50, 167, 145);
+    display: flex;
+}
+
+main {  display: flex;
+}
+
+#evaluation-form {  display: flex;
+width: 675px;
+flex-direction: column;
+}
+
+#trybewarts-forms-logo {  height: 500px;
+}
+
+.foto-hidden {  max-width: 100px;
+    display: none;
+}
+
+.caixa-ckeck, .subject {  cursor: url(pena-redimensionada-rotacionada.webp), auto;
+}
