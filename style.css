@@ -22,8 +22,17 @@
   color: white;
 }
 
+.input-geral{  margin: 0 10px;
+  border-radius: 5px;
+  padding: 5px 0  5px  10px;
+  border: none;
+}
+
+#header-password-input {  max-width: 30%;}
+
 .btn {border: 1px solid #ffffff;
   color: white;
+  margin-right: 0;
 }
 
 .btn:hover {  background-color: #ffffff;
@@ -31,6 +40,7 @@
 
 main {
   display: flex;
+  padding: 40px;
 }
 
 #evaluation-form {
