@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: large;
+  font-family: 'Grenze Gotisch', cursive;;
 }
 
 .header {
@@ -11,6 +14,7 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-around;
+  position: fixed;
 }
 
 .trybewarts-login {
@@ -40,7 +44,13 @@
 
 main {
   display: flex;
-  padding: 40px;
+  padding: 100px 40px 0px 40px; 
+}
+
+.input-form {  margin: 20px;
+  padding: 5px 20px ;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 #evaluation-form {
@@ -53,6 +63,13 @@ main {
   height: 500px;
 }
 
+.label-title {  margin-bottom: 5px;
+}
+
+input[type='checkbox']:checked, input[type='radio']:checked {  -webkit-appearance: none;
+  background-color: rgb(50, 167, 145);
+  border: none;
+}
 
 .foto-hidden {  max-width: 100px;
     display: none;

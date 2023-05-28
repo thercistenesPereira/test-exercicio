@@ -22,13 +22,13 @@
   <main>
     <form action="" id="evaluation-form">
       <div id="input-fullname-div">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" id="input-name" placeholder="Nome" class="input-form">
+        <input type="text" id="input-lastname" placeholder="Sobrenome" class="input-form">
       </div>
       <div id="email-house-div">
-        <input type="email" name="" id="input-email" placeholder="Email">
+        <input type="email" name="" id="input-email" placeholder="Email" class="input-form">
   
-        <select id="house">
+        <select id="house" class="input-form">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -36,31 +36,66 @@
         </select>
       </div>
 
-      <div id="family-div">
-        <label for="family" id="label-family">Qual sua família?</label>
-        <br>
-        <input type="radio" name="family" value="Frontend">Frontend
-        <br>
-        <input type="radio" name="family" value="Backend">Backend
-        <br>
-        <input type="radio" name="family" value="FullStack">FullStack
+      <div id="family-div" class="input-form" style="border: none;">
+        <label for="family" id="label-family" class="label-title"><h5>Qual sua família?</h5></label>
+        <div class="form-check">
+          <input type="radio" name="family" value="Frontend" id="Frontend" class="form-check-input"> 
+          <label for="Frontend" class="form-check-label">Frontend</label> 
+        </div>
+  
+        <div class="form-check">
+          <input type="radio" name="family" value="Backend" id="Backend" class="form-check-input">
+          <label for="Backend" class="form-check-label">Backend</label>
+        </div>
+  
+        <div class="form-check">
+          <input type="radio" name="family" value="FullStack" id="FullStack" class="form-check-input">
+          <label for="FullStack" class="form-check-label">FullStack</label>
+        </div>
       </div>
-      <br>
 
-      <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input type="checkbox" class="subject" value="HoFs">Hofs
-        <br>
-        <input type="checkbox" class="subject" value="Jest">Jest
-        <br>
-        <input type="checkbox" class="subject" value="Promises">Promises
-        <br>
-        <input type="checkbox" class="subject" value="React">React
-        <br>
-        <input type="checkbox" class="subject" value="SQL">SQL<br>
-        <input type="checkbox" class="subject" value="Python">Python
 
-        <label id="label-rate">Como você avalia a Trybewarts?</label><br>
-        <input type="radio" name="rate" value="1">1
+      <div class="input-form" style="border: none;">
+        <label for="content" id="label-content" class="label-title"><h5>Qual conteúdo você está com mais vontade de aprender?</h5></label>
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="HoFs" id="HoFs">
+          <label for="HoFs" class="form-check-label">Hofs</label>
+        </div>
+          
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="Jest" id="Jest">
+          <label for="Jest" class="form-check-label">Jest</label>
+        </div>
+          
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="Promises" id="Promises">
+          <label for="Promises" class="form-check-label">Promises</label>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="React" id="React">
+          <label for="React" class="form-check-label">React</label>
+        </div>
+          
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="SQL" id="SQL">
+          <label for="SQL" class="form-check-label">SQL</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="subject form-check-input" value="Python" id="Python">
+          <label for="Python" class="form-check-label">Python</label>
+        </div>
+      </div>
+
+      <div class="input-form" style="border: none;">
+        <label id="label-rate" class="label-title"><h5>Como você avalia a Trybewarts?</h5></label>
+
+        <div class="form-check"> 
+          <input type="radio" class="form-check-input" name="rate" value="1" id="1">
+          <label for="1" class="form-check-label avaliacao">1</label>
+        </div>
+
         <input type="radio" name="rate" value="2">2
         <input type="radio" name="rate" value="3">3
         <input type="radio" name="rate" value="4">4
@@ -70,6 +105,7 @@
         <input type="radio" name="rate" value="8">8
         <input type="radio" name="rate" value="9">9
         <input type="radio" name="rate" value="10">10
+      </div>
 
         <label class="textarea">Deixe seu comentário:</label><br>
         <textarea maxlength="500" id="textarea" oninput="updateCounter()"></textarea>
