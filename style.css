@@ -77,3 +77,10 @@ input[type='checkbox']:checked, input[type='radio']:checked {  -webkit-appearanc
 
 .caixa-ckeck, .subject {  cursor: url(pena-redimensionada-rotacionada.webp), auto;
 }
+
+footer {  background-color: rgb(50, 167, 145);
+  padding: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
