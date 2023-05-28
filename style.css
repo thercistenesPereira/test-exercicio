@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'harry-potter';
+  src: url('HARRYP__.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {  padding: 0;
   margin: 0;
@@ -23,7 +29,7 @@ body {
 }
 
 .trybewarts-header-logo {  width: 61.41px;
-height: 64px;
+  height: 64px;
 }
 
 .trybewarts-header-logo:hover {  filter: invert(75%);
@@ -38,6 +44,7 @@ height: 64px;
 #trybewarts-header-title {
   color: white;
   text-shadow: 0px 0px 10px white;
+  font-family: 'harry-potter';
 }
 
 #trybewarts-header-title:hover {  filter: invert(75%);}
@@ -81,6 +88,10 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#trybewarts-forms-logo:hover {
+  filter: grayscale(100%);
 }
 
 .label-title {  margin-bottom: 5px;
