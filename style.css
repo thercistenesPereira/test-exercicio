@@ -4,7 +4,11 @@
   margin: 0;
   box-sizing: border-box;
   font-size: large;
-  font-family: 'Grenze Gotisch', cursive;;
+  font-family: 'Grenze Gotisch', cursive;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .header {
@@ -13,23 +17,38 @@
   height: 70px;
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
   position: fixed;
+  top: 0;
+}
+
+.trybewarts-header-logo {  width: 61.41px;
+height: 64px;
+}
+
+.trybewarts-header-logo:hover {  filter: invert(75%);
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 #trybewarts-header-title {
   color: white;
+  text-shadow: 0px 0px 10px white;
 }
+
+#trybewarts-header-title:hover {  filter: invert(75%);}
 
 .input-geral{  margin: 0 10px;
   border-radius: 5px;
   padding: 5px 0  5px  10px;
   border: none;
+}
+
+#header-email-input, #header-password-input {  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.144);
 }
 
 #header-password-input {  max-width: 30%;}
@@ -51,6 +70,7 @@ main {
   padding: 5px 20px ;
   border-radius: 5px;
   border: 1px solid gray;
+  
 }
 
 #evaluation-form {
@@ -69,18 +89,42 @@ main {
 input[type='checkbox']:checked, input[type='radio']:checked {  -webkit-appearance: none;
   background-color: rgb(50, 167, 145);
   border: none;
+  cursor: url(pena-redimensionada-rotacionada.webp), auto;
 }
 
 .foto-hidden {  max-width: 100px;
     display: none;
 }
 
-.caixa-ckeck, .subject {  cursor: url(pena-redimensionada-rotacionada.webp), auto;
+#agreement-div {  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+#submit-btn {  margin-left: 10px;
+  }
+
+#submit-btn:hover {color: #424649;}
+
 footer {  background-color: rgb(50, 167, 145);
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#harry-animado {  
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  transform: translateX(100%);
+}
+
+::-webkit-scrollbar {  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {  background-image: linear-gradient(180deg, #2A7FFF, #FFDD57);
+  border-radius: 20px;
 }

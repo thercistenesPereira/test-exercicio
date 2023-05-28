@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <span id="inicio"></span>
   <header class="header">
-    <img src="img/trybewarts-header-logo copy.svg" alt="Logo da Trybewarts do cabeçalho" class="trybewarts-header-logo">
+    <a href="#inicio"><img src="img/trybewarts-header-logo copy.svg" alt="Logo da Trybewarts do cabeçalho" class="trybewarts-header-logo"></a>
     
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
@@ -142,24 +143,28 @@
         </div>
       </div>
 
-      <div class="input-form" style="border: none;">
-        <label class="textarea"><h5>Deixe seu comentário:</h5></label><br>
-        <textarea maxlength="500" id="textarea" oninput="updateCounter()"></textarea>
+      <div class="input-form form-floating" style="border: none;">
+        <label for="textarea" class="textarea"><h5>Deixe seu comentário:</h5></label><br><br>
+        <textarea maxlength="500" class="form-control" id="textarea" oninput="updateCounter()" rows="5" cols="50"></textarea>
         <div id="counter">500</div>
       </div>
 
-      <div id="agreement-div">
-        <input type="checkbox" id="agreement">
-        <label id="label-infos">Você concorda com o uso das informações acima?</label>
-        <button type="submit" id="submit-btn" class="btn btn-outline-dark" disabled>Enviar</button>
+      <div id="agreement-div" class="input-form" style="border: none;">
+        <div class="form-check">
+          <input type="checkbox" id="agreement" class="form-check-input">
+          <label id="label-infos" class="form-check-label">Você concorda com o uso das informações acima?</label>
+        </div>
+        <button type="submit" id="submit-btn" class="btn btn-dark" disabled>Enviar</button>
       </div>
 
         
     </form>
     <img src="img/trybewarts-colored copy.svg" id="trybewarts-forms-logo" alt="">
   </main>
-  <br>
-  <footer>
+
+  <img src="img/Voando-Harry-Potter-PNG.png" alt="" id="harry-animado">
+  
+  <footer>   
     Direitos reservados à Trybewarts©
   </footer>
   

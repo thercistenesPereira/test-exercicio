@@ -28,3 +28,22 @@ const submitBtn = document.querySelector('#submit-btn');
 agreement.addEventListener('change', () => {
   submitBtn.disabled = !agreement.checked;
 });
+
+
+
+const harry = document.querySelector('#harry-animado');
+let posicao = 0;
+let velocidade = 2;
+
+function moverHarry() {
+  posicao += velocidade;
+  harry.style.left = posicao + 'px';
+
+  if (posicao > window.innerWidth) {
+    posicao = -harry.clientWidth;
+  }
+
+  requestAnimationFrame(moverHarry);
+}
+
+moverHarry();
