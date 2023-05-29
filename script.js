@@ -47,3 +47,65 @@ function moverHarry() {
 }
 
 moverHarry();
+
+const bntSubmit = document.querySelector('#submit-btn');
+const formData = document.querySelector('#form-data');
+
+bntSubmit.addEventListener('click', ()=> {
+    const inputName = document.querySelector('#input-name').value;
+    const inputLastName = document.querySelector('#input-lastname').value;
+    const studentEmail = document;querySelector('#input-email').value;
+    const studentHouse = document.querySelector('#house').value;
+    const studentFamily = document.querySelector('input[name="family"]:checked').value;
+    const studentSubject = document.querySelectorAll('input[name="subject"]:checked').value;
+    const elementosMarcados = Array.from(document.querySelectorAll('.subject:checked')).map(el => el.value);
+    console
+    console.log(elementosMarcados);
+})
+
+// const submitBtn = document.querySelector('#submit-btn');
+// const formData = document.querySelector('#form-data');
+
+// submitBtn.addEventListener('click', () => {
+//   const studentName = document.querySelector('#input-name').value;
+//   const studentEmail = document.querySelector('#input-email').value;
+//   const studentHouse = document.querySelector('input[name="house"]:checked').value;
+//   const studentFamily = document.querySelector('input[name="family"]:checked').value;
+//   const studentSubjects = document.querySelectorAll('input[name="subject"]:checked');
+//   const studentSubjectsArray = Array.from(studentSubjects).map(subject => subject.value);
+//   const studentEvaluation = document.querySelector('input[name="evaluation"]:checked').value;
+//   const studentComment = document.querySelector('#textarea').value;
+
+//   const nameField = document.createElement('p');
+//   nameField.textContent = `Nome: ${studentName}`;
+
+//   const emailField = document.createElement('p');
+//   emailField.textContent = `Email: ${studentEmail}`;
+
+//   const houseField = document.createElement('p');
+//   houseField.textContent = `Casa: ${studentHouse}`;
+
+//   const familyField = document.createElement('p');
+//   familyField.textContent = `Família: ${studentFamily}`;
+
+//   const subjectsField = document.createElement('p');
+//   subjectsField.textContent = `Matérias: ${studentSubjectsArray.join(', ')}`;
+
+//   const evaluationField = document.createElement('p');
+//   evaluationField.textContent = `Avaliação: ${studentEvaluation}`;
+
+//   const commentField = document.createElement('p');
+//   commentField.textContent = `Observações: ${studentComment}`;
+
+//   formData.innerHTML = '';
+//   formData.appendChild(nameField);
+//   formData.appendChild(emailField);
+//   formData.appendChild(houseField);
+//   formData.appendChild(familyField);
+//   formData.appendChild(subjectsField);
+//   formData.appendChild(evaluationField);
+//   formData.appendChild(commentField);
+
+//   formData.style.display = 'block';
+//   document.querySelector('main').style.display = 'none';
+// });
