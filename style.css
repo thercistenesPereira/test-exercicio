@@ -117,9 +117,9 @@ input[type='checkbox']:checked, input[type='radio']:checked {  -webkit-appearanc
 
 #submit-btn:hover {color: #424649;}
 
-#form-data {
+/* #form-data {
   display: none;
-}
+} */
 
 footer {  background-color: rgb(50, 167, 145);
   padding: 10px;

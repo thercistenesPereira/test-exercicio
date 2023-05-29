@@ -51,29 +51,35 @@ moverHarry();
 const bntSubmit = document.querySelector('#submit-btn');
 const formData = document.querySelector('#form-data');
 
+
 bntSubmit.addEventListener('click', ()=> {
     const studentName = document.querySelector('#input-name').value;
     const studentLastName = document.querySelector('#input-lastname').value;
     const studentEmail = document.querySelector('#input-email').value;
+    const studentHouse = document.querySelector('#house').value;
+    const studentFamily = document.querySelector('input[name="family"]:checked').value;
 
-    console.log(studentName);
-    console.log(studentLastName);
-    console.log(studentEmail);
+    const studentLanguageSelected = []
+    const studentLanguage = document.getElementsByName('subject');
+    for (let index = 0; index < studentLanguage.length; index += 1) {
+        if(studentLanguage[index].checked) {
+            studentLanguage[index].value;
+            studentLanguageSelected.push(studentLanguage[index].value);
+        };
+    };
+
+    const assessment = document.querySelector('input[name="rate"]:checked').value;
+    const studentComment = document.querySelector('#textarea').value;
+
+    
+    const nameField = document.querySelector('#nome');
+    const nomeCompleto = studentName + studentLastName
+    nameField.innerText = nomeCompleto;
 })
 
-// const submitBtn = document.querySelector('#submit-btn');
-// const formData = document.querySelector('#form-data');
 
 // submitBtn.addEventListener('click', () => {
-//   const studentName = document.querySelector('#input-name').value;
-//   const studentEmail = document.querySelector('#input-email').value;
-//   const studentHouse = document.querySelector('input[name="house"]:checked').value;
-//   const studentFamily = document.querySelector('input[name="family"]:checked').value;
-//   const studentSubjects = document.querySelectorAll('input[name="subject"]:checked');
-//   const studentSubjectsArray = Array.from(studentSubjects).map(subject => subject.value);
-//   const studentEvaluation = document.querySelector('input[name="evaluation"]:checked').value;
-//   const studentComment = document.querySelector('#textarea').value;
-
+//   
 //   const nameField = document.createElement('p');
 //   nameField.textContent = `Nome: ${studentName}`;
 
