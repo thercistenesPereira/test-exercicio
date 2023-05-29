@@ -52,15 +52,13 @@ const bntSubmit = document.querySelector('#submit-btn');
 const formData = document.querySelector('#form-data');
 
 bntSubmit.addEventListener('click', ()=> {
-    const inputName = document.querySelector('#input-name').value;
-    const inputLastName = document.querySelector('#input-lastname').value;
-    const studentEmail = document;querySelector('#input-email').value;
-    const studentHouse = document.querySelector('#house').value;
-    const studentFamily = document.querySelector('input[name="family"]:checked').value;
-    const studentSubject = document.querySelectorAll('input[name="subject"]:checked').value;
-    const elementosMarcados = Array.from(document.querySelectorAll('.subject:checked')).map(el => el.value);
-    console
-    console.log(elementosMarcados);
+    const studentName = document.querySelector('#input-name').value;
+    const studentLastName = document.querySelector('#input-lastname').value;
+    const studentEmail = document.querySelector('#input-email').value;
+
+    console.log(studentName);
+    console.log(studentLastName);
+    console.log(studentEmail);
 })
 
 // const submitBtn = document.querySelector('#submit-btn');
